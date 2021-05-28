@@ -7,7 +7,7 @@ from picamera import PiCamera
 stream = io.BytesIO()
 with PiCamera() as camera:
 
-    camera.resolution = (640, 480)
+    camera.resolution = (800, 600)
     camera.framerate=18
     camera.awb_mode = 'cloudy'
         # 'off'
@@ -22,7 +22,7 @@ with PiCamera() as camera:
         # 'horizon'
     #camera.brightness = 0 - 100
     #color_effects = (128, 128)
-    camera.contrast = -20
+    camera.contrast = -10
     camera.exposure_mode = 'auto'
         # 'off'
         # 'auto'
