@@ -39,9 +39,9 @@ with PiCamera() as camera:
         # 'fireworks'
     camera.shutter_speed = 28000
     camera.image_effect = 'film'
-    camera.image_effect_params.strength = 256.0
+    #camera.image_effect_params.strength = 256.0
     camera.iso = 200
-    camera.start_preview()
+    #camera.start_preview()
     camera.start_recording(stream, format='h264', quality=20)
     camera.wait_recording(20)
     camera.stop_recording()
